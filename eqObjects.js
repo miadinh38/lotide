@@ -28,11 +28,11 @@ const eqObjects = function(object1, object2) {
   for (const key of Object.keys(object1)) {
     const value1 = object1[key];
     const value2 = object2[key];
-    if (Array.isArray(value1) && Array.isArray(value2)) {
+    if (Array.isArray(value1) && Array.isArray(value2)) { //check if value is array and pass to eqArrays function
       if (!eqArrays(value1,value2)) {
         return false;
       }
-    } else if (value1 !== value2) {
+    } else if (value1 !== value2) { //if they are primitives, compare 2 values
       return false;
     }
   }
