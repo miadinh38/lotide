@@ -1,18 +1,19 @@
 const middle = require('../middle');
-const assertArraysEqual = require('../assertArraysEqual');
-
-// test code
-
-const array1 = [1, 2, 3, 4, 5];
-console.log(middle(array1));
-assertArraysEqual(middle(array1), [3]);
+const assert = require('chai').assert;
 
 
-const array2 = [1, 2, 3, 4, 5, 6];
-console.log(middle(array2));
-assertArraysEqual(middle(array2), [3, 4]);
+describe("#middle", () => {
+  it("returns [3] for [1, 2, 3, 4, 5]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5]), [3]);
+  });
 
+  it("returns [3, 4] for [1, 2, 3, 4, 5, 6]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+  });
 
-const array3 = [1];
-console.log(middle(array3));
-assertArraysEqual(middle(array3), [1]);
+  it("returns [] for [2]", () => {
+    assert.deepEqual(middle([2]), []);
+  });
+
+});
+
