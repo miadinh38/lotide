@@ -30,7 +30,6 @@ const eqObjects = function(object1, object2) {
 };
 
 
-// FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
@@ -40,7 +39,6 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
 const test1 = { a: '1', b: 2 };
 const test2 = { b: 2, a: '1' };
 assertObjectsEqual(test1, test2);
