@@ -1,4 +1,3 @@
-
 const flatten = function(array) {
   let flatArray = [];
   for (let i = 0; i < array.length; i++) {
