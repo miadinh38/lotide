@@ -1,6 +1,3 @@
-const assertEqual = require('./assertEqual');
-
-
 const findKeyByValue = function(bestTVShowsByGenre, nameOfTVShow) {
   for (const key in bestTVShowsByGenre) {
     if (nameOfTVShow === bestTVShowsByGenre[key]) {
