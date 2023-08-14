@@ -14,8 +14,7 @@ const findKey = require('./findKey');
 const countLetters = require('./countLetters');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
-
-
+const assertObjectsEqual = require('./assertObjectsEqual');
 
 
 module.exports = {
@@ -35,6 +34,7 @@ module.exports = {
   findKey,
   countLetters,
   takeUntil,
-  without
+  without,
+  assertObjectsEqual
 
 };
