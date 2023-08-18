@@ -1,4 +1,3 @@
-const assert = require('chai').assert;
 const assertObjectsEqual = require('../assertObjectsEqual');
 
 describe('assertObjectsEqual', function() {
